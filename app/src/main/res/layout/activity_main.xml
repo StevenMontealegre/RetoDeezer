@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:text="Seleccione una playlist" />
+
+    <GridLayout
+        android:layout_width="379dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/txtPlaylist"
+            android:layout_width="306dp"
+            android:layout_height="match_parent"
+            android:layout_row="0"
+            android:layout_column="0"
+
+            android:inputType="textShortMessage"
+            android:paddingHorizontal="12dp" />
+
+        <ImageButton
+            android:id="@+id/searchButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_search_category_default" />
+
+    </GridLayout>
+
+    <ListView
+        android:id="@+id/lst_playlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+</LinearLayout>
